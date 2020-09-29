@@ -27,7 +27,17 @@ namespace NameParser
 
         private void btnCalculate_Click(object sender, RoutedEventArgs e)
         {
-            
+            string fullName = txtFullName.Text;
+
+            var firstComma = fullName.IndexOf(",");
+            var lastName = fullName.Substring(0, firstComma);
+            lblLastName.Content = "Last Name: " + lastName;
+
+            var secondComma = fullName.IndexOf(",");
+            var firstName = fullName.Substring(firstComma + 1, secondComma!);
+            lblFistName.Content = ("First Name " + firstName);
+
+
         }
     }
 }
