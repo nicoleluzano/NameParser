@@ -7,6 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="360" Width="559">
     <Grid>
+        <Label x:Name="lblInstructions" Content="LastName, FistName, MiddleName" HorizontalAlignment="Left" Margin="19,18,0,0" VerticalAlignment="Top" Width="364" FontFamily="Arial Black"/>
 
     </Grid>
 </Window>
